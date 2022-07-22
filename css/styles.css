@@ -48,6 +48,7 @@ img {
     --color-contacts: #757575;
     --button-background-color: #F5F4FA;
     --color-border-bottom-header: #ECECEC;
+    --color-of-svg: #AFB1B8;
 }
 
 body {
@@ -416,7 +417,7 @@ a.contacts.footer:focus {
     height: 44px;
     padding: 12px;
     margin-top: 16px;
-    fill: #AFB1B8;
+    fill: var(--color-of-svg);
 }
 
 .item-social-networks:hover,
@@ -427,10 +428,38 @@ a.contacts.footer:focus {
 }
 
 /*Стилизация секции clients*/
-.clients-examples {
-    display: flex;
+.container-clients {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+.clients-examples {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.clients-site {
+    display: block;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+}
+
+.icon-logo {
+    fill: var(--color-of-svg);
+}
+
+.clients-site:hover .icon-logo {
+    fill: var(--accent-color);
+}
+
+.clients-site:hover,
+.clients-site:focus {
+    border: 1px solid var(--accent-color);
+}
 
 /* Стилизация страницы portfolio*/
 .container-portfolio {

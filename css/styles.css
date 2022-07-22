@@ -403,6 +403,29 @@ a.contacts.footer:focus {
     letter-spacing: 0.03em;
 }
 
+.social-networks {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+    margin: 0 auto;
+}
+
+.item-social-networks {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    margin-top: 16px;
+    fill: #AFB1B8;
+}
+
+.item-social-networks:hover,
+.item-social-networks:focus {
+    background-color: var(--accent-color);
+    fill: var( --secondary-text-color);
+    border-radius: 50%;
+}
+
+
 /* Стилизация страницы portfolio*/
 .container-portfolio {
     width: 1170px;

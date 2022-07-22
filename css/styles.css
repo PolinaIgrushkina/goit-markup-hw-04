@@ -426,6 +426,11 @@ a.contacts.footer:focus {
     border-radius: 50%;
 }
 
+/*Стилизация секции clients*/
+.clients-examples {
+    display: flex;
+}
+
 
 /* Стилизация страницы portfolio*/
 .container-portfolio {

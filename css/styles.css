@@ -84,7 +84,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    /*outline: 2px solid red;*/
+    outline: 2px solid red;
 }
 
 .section {
@@ -154,10 +154,6 @@ nav {
     align-items: center;
 }
 
-.contacts-header .item:not(:last-child) {
-    margin-right: 50px;
-}
-
 .contacts a {
     font-weight: 500;
     font-size: 14px;
@@ -182,6 +178,24 @@ a.contacts.header {
 a.contacts.header:hover,
 a.contacts.header:focus,
 a.current {
+    color: var(--accent-color);
+}
+
+.contacts.header {
+    display: flex; 
+    align-items: center;  
+}
+
+.item-contacts-header:not(:last-child) {
+    margin-right: 30px;
+}
+
+.icon-contacts {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-envelope:hover {
     color: var(--accent-color);
 }
 
@@ -240,10 +254,12 @@ a.contacts.footer:focus {
     padding-bottom: 200px;
 
     background-color: var(--secondary-background-color);
+    background-image: url("../images/background.jpg"),                      
+                      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .container-hero {
-    width: 1600px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -276,6 +292,8 @@ a.contacts.footer:focus {
     
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Стилизация секции benefits */

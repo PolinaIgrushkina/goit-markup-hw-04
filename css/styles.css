@@ -452,7 +452,8 @@ a.contacts.footer:focus {
     fill: var(--color-of-svg);
 }
 
-.clients-site:hover .icon-logo {
+.clients-site:hover .icon-logo,
+.clients-site:focus .icon-logo {
     fill: var(--accent-color);
 }
 

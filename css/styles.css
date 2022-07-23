@@ -85,7 +85,7 @@ a {
 .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 .section {
@@ -203,11 +203,12 @@ a.current {
 /* Стилизация footer  */
 footer {
     background-color: var(--secondary-background-color);
-}
-
-footer {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.container-footer {
+    display: flex;
 }
 
 .logo.footer {
@@ -242,6 +243,45 @@ a.contacts.footer {
 a.contacts.footer:hover,
 a.contacts.footer:focus {
     color: var(--accent-color);
+}
+
+.title-second-column-footer {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.second-column-footer {
+    width: 206px;
+    height: 44px;
+    margin-left: 70px;
+}
+
+.social-networks-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.item-social-networks-footer {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--secondary-text-color);
+    border-radius: 50%;
+}
+
+.item-social-networks-footer:hover,
+.item-social-networks-footer:focus {
+    background-color: var(--accent-color);
+    fill: var(--secondary-text-color);
+    border-radius: 50%;
 }
 
 /* Стилизация main главной страницы */
